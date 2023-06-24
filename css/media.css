@@ -37,6 +37,55 @@
       width: 168px;
       height: 88px;
   }
+/* тут костиль з паддінгом) */
+  .footer-container {
+      align-items: baseline;
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+      row-gap: 72px;
+      padding-left: 108px;
+  }
+  .footer-part {
+      display: block;
+      
+  }
+
+  .footer-logo {
+      display: inline-block;
+      margin-bottom: 16px;
+  }
+
+  .footer-about {
+      max-width: 264px;
+  }
+  .footer-soc-container {
+      width: 208px;
+      display: block;
+      
+  }
+  .footer-form-container {
+      display: block;
+      
+      width: 453px;
+  }
+
+  .footer-form {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+  }
+
+  .footer-form-label {
+      width: 264px;
+  }
+
+  .footer-form-input {
+      width: 264px;
+      height: 40px;
+  }
 
 
 }
@@ -102,11 +151,49 @@
   }
   .customers-list {
       flex-wrap: nowrap;
+  }
+  .footer {
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+  .footer-container {
+      align-items: baseline;
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+  }
+  .footer-part {
+    display: block;
+      margin-right: 120px;
+  }
+  .footer-logo {
+      display: inline-block;
+      margin-bottom: 16px;
+  }
+  .footer-about {
+      max-width: 264px;
+  }
+  .footer-soc-container {
+      width: 208px;
+      display: block;
+      margin-right: 80px;
+  }
+  .footer-form-container {
+    display: block;
+      width: 453px;
+  }
+  .footer-form {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
       
-      gap: 24px;
   }
-  .customers-item {
-      width: 168px;
-      height: 88px;
+  .footer-form-label{
+    width: 264px;
   }
+  .footer-form-input {
+      width: 264px;
+      height: 40px;
+  }
+
 }
