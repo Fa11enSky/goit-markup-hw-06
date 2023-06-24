@@ -25,6 +25,19 @@
     row-gap: 64px;
     flex-wrap: wrap;
   }
+  .customers-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      row-gap: 72px;
+      
+  }
+  .customers-item {
+      width: 168px;
+      height: 88px;
+  }
+
 
 }
 
@@ -63,7 +76,7 @@
     display: block;
   }
   .team {
-      background-color: var(--white-cloud);
+      
       padding-top: 120px;
       padding-bottom: 120px;
   }
@@ -71,6 +84,7 @@
       display: flex;
       justify-content: center;
       gap: 24px;
+      flex-wrap: nowrap;
   }
   .team-member {
       
@@ -81,5 +95,18 @@
       margin-right: auto;
       margin-left: auto;
       padding: 32px 0;
+  }
+  .customers {
+      padding-top: 120px;
+      padding-bottom: 120px;
+  }
+  .customers-list {
+      flex-wrap: nowrap;
+      
+      gap: 24px;
+  }
+  .customers-item {
+      width: 168px;
+      height: 88px;
   }
 }
