@@ -3,8 +3,6 @@
     max-width: 768px;
   }
   
-      
-  }
   .advantages-list{
     flex-wrap: wrap;
     flex-direction: row;
@@ -30,8 +28,8 @@
   }
   .advantages {
       padding-top: 120px;
-      padding-bottom: 120px;}
-
+      padding-bottom: 120px;
+  }
   .advantages-icon-block {
     display: flex;
   }
