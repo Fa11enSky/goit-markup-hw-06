@@ -42,6 +42,7 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
 }
 input {
   font-family: inherit;
@@ -161,14 +162,14 @@ input {
 
 /* ------------------------------hero--------------------------------- */
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 428px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bgimage.jpg);
+    url(../images/mobile_bcg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -179,13 +180,13 @@ input {
   text-align: center;
   color: var(--white);
   text-transform: capitalize;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  max-width: 496px;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+  max-width: 320px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .button {

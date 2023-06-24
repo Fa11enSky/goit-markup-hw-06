@@ -2,14 +2,34 @@
   .container {
     max-width: 768px;
   }
-  
-  .advantages-list{
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet_bcg.jpg);
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 36px;
+  }
+
+  .advantages-list {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 24px;
     row-gap: 72px;
   }
-  .advantages-item{
+  .advantages-item {
     width: calc((100% - 24px) / 2);
     outline: 1px solid green;
   }
@@ -17,77 +37,70 @@
     text-align: left;
   }
   .advantages-post {
-      
   }
-  .team-list{
+  .team-list {
     flex-direction: row;
     gap: 24px;
     row-gap: 64px;
     flex-wrap: wrap;
   }
   .customers-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 24px;
-      row-gap: 72px;
-      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 72px;
   }
   .customers-item {
-      width: 168px;
-      height: 88px;
+    width: 168px;
+    height: 88px;
   }
-/* тут костиль з паддінгом) */
+  /* тут костиль з паддінгом) */
   .footer-container {
-      align-items: baseline;
-      justify-content: flex-start;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 24px;
-      row-gap: 72px;
-      padding-left: 108px;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
   }
   .footer-part {
-      display: block;
-      
+    display: block;
   }
 
   .footer-logo {
-      display: inline-block;
-      margin-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
   }
 
   .footer-about {
-      max-width: 264px;
+    max-width: 264px;
   }
   .footer-soc-container {
-      width: 208px;
-      display: block;
-      
+    width: 208px;
+    display: block;
   }
   .footer-form-container {
-      display: block;
-      
-      width: 453px;
+    display: block;
+
+    width: 453px;
   }
 
   .footer-form {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .footer-form-label {
-      width: 264px;
+    width: 264px;
   }
 
   .footer-form-input {
-      width: 264px;
-      height: 40px;
+    width: 264px;
+    height: 40px;
   }
-
-
 }
 
 @media screen and (min-width: 1158px) {
@@ -96,9 +109,28 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 48px;
+  }
+
   .advantages {
-      padding-top: 120px;
-      padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .advantages-icon-block {
     display: flex;
@@ -121,79 +153,75 @@
     font-weight: 400;
     letter-spacing: 0.02em;
   }
-  .work{
+  .work {
     display: block;
   }
   .team {
-      
-      padding-top: 120px;
-      padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .team-list {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: nowrap;
   }
   .team-member {
-      
-      width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4);
   }
   .member {
-      width: 232px;
-      margin-right: auto;
-      margin-left: auto;
-      padding: 32px 0;
+    width: 232px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 32px 0;
   }
   .customers {
-      padding-top: 120px;
-      padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .customers-list {
-      flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .footer {
-      padding-top: 100px;
-      padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .footer-container {
-      align-items: baseline;
-      flex-direction: row;
-      gap: 0;
-      justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
   }
   .footer-part {
     display: block;
-      margin-right: 120px;
+    margin-right: 120px;
   }
   .footer-logo {
-      display: inline-block;
-      margin-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
   }
   .footer-about {
-      max-width: 264px;
+    max-width: 264px;
   }
   .footer-soc-container {
-      width: 208px;
-      display: block;
-      margin-right: 80px;
+    width: 208px;
+    display: block;
+    margin-right: 80px;
   }
   .footer-form-container {
     display: block;
-      width: 453px;
+    width: 453px;
   }
   .footer-form {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
-  .footer-form-label{
+  .footer-form-label {
     width: 264px;
   }
   .footer-form-input {
-      width: 264px;
-      height: 40px;
+    width: 264px;
+    height: 40px;
   }
-
 }
