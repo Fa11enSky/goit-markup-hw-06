@@ -59,10 +59,12 @@ input {
 }
 
 .container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-  /* outline: 1px solid red; */
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  outline: 1px solid red;
 }
 .menu-items .current {
   position: relative;
@@ -213,20 +215,23 @@ input {
   background-color: var(--active-blue);
 }
 
-/* section advantages */
+/* -------------section advantages-------------------- */
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
   justify-content: center;
 }
 
 .advantages-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
 .advantages-icon-block {
   display: flex;
@@ -237,20 +242,24 @@ input {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
+  display: none;
 }
 .advantages-title {
   color: var(--main-dark);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
   margin-bottom: 8px;
+  
 }
 
 .advantages-post {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.32px;
 }
 
 /* section What are we doing */
