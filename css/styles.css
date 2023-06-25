@@ -83,13 +83,14 @@ input {
 }
 /* header-nav */
 .page-head {
-  max-width: 1440px;
+  max-width: 428px;
   margin: 0 auto;
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
 }
-
+.main-header{
+  display: none;
+  
+}
 .logo {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
@@ -109,17 +110,44 @@ input {
   display: flex;
   align-items: center;
 }
+.mob-header{
+  padding-top: 25.5px;
+  padding-bottom: 23.5px;
+}
+.mob-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-.header-container {
+}
+.mob-nav > .logo{
+  margin: 0;
+}
+.mob-menu-btn{
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 32px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
 }
+
+
+.mobile-menu-icon{
+  stroke: var(--main-dark);
+}
+
 
 .header-menu {
   display: flex;
   gap: 40px;
   margin-right: 332px;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 
 .nav-link {
@@ -144,7 +172,7 @@ input {
 .header-adress {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 
 .address-link {
@@ -174,6 +202,15 @@ input {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  .hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        url(../images/mobile_bcg_2x.jpg);
+  }
 }
 
 .hero-title {
