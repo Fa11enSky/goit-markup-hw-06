@@ -136,36 +136,49 @@ input {
 }
 .mobile-menu-icon {
   stroke: var(--main-dark);
+  ttransition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-icon:hover,
+.mobile-menu-icon:focus {
+  stroke: var(--active-blue);
 }
 
 /* ---------------MOB-MENU-MODAL-------------- */
+.header-container {
+}
 .mob-menu-page {
   padding: 24px 24px 40px 40px;
   position: fixed;
-  top: 0;
-  left: 0;
+  z-index: 999;
+  top: 0px;
+  right: 0px;
   background-color: var(--white);
   width: 100%;
   height: 100%;
-  
-  
-}
-@media screen and (max-height: 796px){
-  .mob-menu-page{overflow: auto;}
-}
-  
 
-.mob-menu-main-page{
+  transform: translateY(-100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-page.is-open {
+  transform: translateY(0);
+}
+
+@media screen and (max-height: 796px) {
+  .mob-menu-page {
+    overflow: auto;
+  }
+}
+
+.mob-menu-main-page {
   display: flex;
   height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-  
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mob-menu-close {
   display: flex;
   align-items: center;
- margin-left: auto;
+  margin-left: auto;
   justify-content: center;
   border-radius: 50%;
   border: 1px solid #e7e9fc;
@@ -194,7 +207,6 @@ input {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  
 }
 
 .mob-menu-item {
@@ -221,7 +233,7 @@ input {
 }
 
 .mob-adress-item:first-child {
-  font-size: 36px;
+  /* font-size: 36px; */
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
@@ -293,15 +305,21 @@ input {
 }
 @media screen and (min-width: 320px) {
   .mob-soc {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+  }
+    .mob-adress-item:first-child{
+      font-size: 25px;
     }
 }
-@media screen and (min-width: 428px){
-.mob-soc {
-  justify-content: flex-start;
-  gap: 56px;
-}
+@media screen and (min-width: 428px) {
+  .mob-soc {
+    justify-content: flex-start;
+    gap: 56px;
+  }
+    .mob-adress-item:first-child {
+      font-size: 36px;
+    }
 }
 
 .mob-soc-item {
