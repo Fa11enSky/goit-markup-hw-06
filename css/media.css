@@ -2,6 +2,10 @@
   .container {
     max-width: 768px;
   }
+  .mob-menu-page{
+    display: none;
+  }
+
   .main-header {
     display: flex;
     justify-content: space-between;
