@@ -356,7 +356,7 @@ input {
 .hero {
   padding-top: 112px;
   padding-bottom: 112px;
-  max-width: 428px;
+  max-width: 100%;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
